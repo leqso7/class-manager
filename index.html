@@ -623,7 +623,7 @@
       background: rgba(0, 0, 0, 0.3);
   }
   
-  /* მობილური ვერსიისთვის */
+  /* მობილური ვ��რსიისთვის */
   @media (max-width: 480px) {
       .container {
           max-height: 85vh;
@@ -878,7 +878,7 @@
     <!-- Firebase იმპორტები დავამატოთ head-ში -->
     <script type="module">
         import { initializeApp } from 'https://www.gstatic.com/firebasejs/9.22.0/firebase-app.js';
-        import { getDatabase, ref, onValue, update } from 'https://www.gstatic.com/firebasejs/9.22.0/firebase-database.js';
+        import { getDatabase, ref, onValue, update, get } from 'https://www.gstatic.com/firebasejs/9.22.0/firebase-database.js';
   
         // Firebase კონფიგურაცია
         const firebaseConfig = {
@@ -1165,7 +1165,7 @@
   
     function distributeGroups(groupSize) {
         if (groupSize >= students.length) {
-            alert(`ჯგუფი ვერ შეიქმნება ${groupSize}-იანი, სტუდენტების რაოდენობა ძალიან ცოტაა.`);
+            alert(`ჯგუფი ვერ შეიქმნება ${groupSize}-იანი, სტუდენტ���ბის რაოდენობა ძალიან ცოტაა.`);
             return;
         }
   
@@ -1570,7 +1570,7 @@
         groupSizes[i] = maxGroupSize;
     }
   
-    // შევქმნათ ასვი ჯგუფებისთვის
+    // შევქმნათ ა��ვი ჯგუფებისთვის
     const groups = [];
   
     // არეულად დავლაგოთ სტუდენტები
@@ -1798,7 +1798,7 @@
     templates = JSON.parse(localStorage.getItem('templates')) || {};
   }
   
-  // გამოვიძახოთ ეს ფუნქცია გვერდის ჩატვირთვისას
+  // გამოვიძახოთ ეს ფუნქცი�� გვერდის ჩატვირთვისას
   document.addEventListener('DOMContentLoaded', function() {
     loadTemplates();
     checkSiteStatus();
@@ -1905,7 +1905,7 @@
           students.push(...templates[name]);
           availableStudents.push(...templates[name]);
       } else if (name) {
-          // აქაც ვამატებთ წერტილი დამუშვებას ერთეული სახელებისთვის
+          // აქაც ვამატებთ წ���რტილი დამუშვებას ერთეული სახელებისთვის
           const processedName = name.replace('.', ' ');
           students.push(processedName);
           availableStudents.push(processedName);
@@ -2461,7 +2461,7 @@
       });
   });
   
-  // ლეიაუთის განახების ფუნქცია
+  // ლ���იაუთის განახების ფუნქცია
   function updateLayout() {
       const nameList = document.querySelector('.name-list');
       if (nameList) {
