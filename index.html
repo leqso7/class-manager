@@ -993,7 +993,7 @@
             <button onclick="askGroupChoice(6)">6</button>
             <button onclick="askGroupChoice(7)">7</button>
         </div>
-        <!-- HTML ნაწილში დავამატოთ გადიდების ღილაკი -->
+        <!-- HTML ნაწილშ��� დავამა��ოთ გადიდების ღილაკი -->
     </div>
   <script>
     const JSONBIN_API_KEY = '$2a$10$irNeeadxzMPL4iu242bQp..s2Ebyna0Df.f8oblrkk1UZPC2171Le';
@@ -1014,6 +1014,7 @@
   }
   }
   
+  
   async function updateUsedPasswords(usedPasswords) {
   try {
     await fetch(`https://api.jsonbin.io/v3/b/${JSONBIN_BIN_ID}`, {
@@ -1028,6 +1029,7 @@
     console.error('Error updating used passwords:', error);
   }
   }
+  
   
   async function checkPassword() {
   const passwordInput = document.getElementById('passwordInput').value;
