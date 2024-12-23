@@ -13,10 +13,10 @@ const InstallButton = styled.button`
   background: #4CAF50;
   color: white;
   border: none;
-  padding: 10px 20px;
+  padding: 8px 16px;
   border-radius: 5px;
   cursor: pointer;
-  font-size: 16px;
+  font-size: 14px;
   z-index: 1001;
   transition: all 0.3s ease;
 
@@ -26,8 +26,8 @@ const InstallButton = styled.button`
   }
 
   @media (max-width: 768px) {
-    padding: 8px 15px;
-    font-size: 14px;
+    padding: 6px 12px;
+    font-size: 12px;
     top: 10px;
     right: 10px;
   }
