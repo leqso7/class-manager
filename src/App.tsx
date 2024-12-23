@@ -127,8 +127,8 @@ function App() {
       }
 
       // თუ მთავარ გვერდზე ვართ, გადავამისამართოთ
-      if (window.location.pathname === '/class-manager-./' || 
-          window.location.pathname === '/class-manager-.') {
+      if (window.location.pathname === '/class-manager/' || 
+          window.location.pathname === '/class-manager') {
         navigate(hasAccess ? '/app' : '/request', { replace: true });
       }
     };
